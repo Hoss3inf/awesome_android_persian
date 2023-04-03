@@ -42,3 +42,39 @@ dtf.format(PersianDate.now());    // => e.g. '1396/05/10'
 ### 1. [Persian-date-picker-dialog](https://github.com/aliab/Persian-Date-Picker-Dialog)
 [logo]: [https://raw.githubusercontent.com/aliab/Persian-Date-Picker-Dialog/master/screenshot/heroimage.jpg](https://raw.githubusercontent.com/aliab/Persian-Date-Picker-Dialog/master/screenshot/heroimage.jpg) "Logo Title Text 2"
 
+example:
+
+```
+picker = new PersianDatePickerDialog(this)
+                .setPositiveButtonString("باشه")
+                .setNegativeButton("بیخیال")
+                .setTodayButton("امروز")
+                .setTodayButtonVisible(true)
+                .setMinYear(1300)
+                .setMaxYear(PersianDatePickerDialog.THIS_YEAR)
+                .setMaxMonth(PersianDatePickerDialog.THIS_MONTH)
+                .setMaxDay(PersianDatePickerDialog.THIS_DAY)
+                .setInitDate(1370, 3, 13)
+                .setActionTextColor(Color.GRAY)
+                .setTypeFace(typeface)
+                .setTitleType(PersianDatePickerDialog.WEEKDAY_DAY_MONTH_YEAR)
+                .setShowInBottomSheet(true)
+                .setListener(new PersianPickerListener() {
+                    @Override
+                    public void onDateSelected(@NotNull PersianPickerDate persianPickerDate) {
+                        Log.d(TAG, "onDateSelected: " + persianPickerDate.getTimestamp());//675930448000
+                        Log.d(TAG, "onDateSelected: " + persianPickerDate.getGregorianDate());//Mon Jun 03 10:57:28 GMT+04:30 1991
+                        Log.d(TAG, "onDateSelected: " + persianPickerDate.getPersianLongDate());// دوشنبه  13  خرداد  1370
+                        Log.d(TAG, "onDateSelected: " + persianPickerDate.getPersianMonthName());//خرداد
+                        Log.d(TAG, "onDateSelected: " + PersianCalendarUtils.isPersianLeapYear(persianPickerDate.getPersianYear()));//true
+                        Toast.makeText(context, persianPickerDate.getPersianYear() + "/" + persianPickerDate.getPersianMonth() + "/" + persianPickerDate.getPersianDay(), Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onDismissed() {
+
+                    }
+                });
+
+        picker.show();
+        ```
