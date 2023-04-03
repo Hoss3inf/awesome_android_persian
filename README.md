@@ -6,7 +6,7 @@ A collection of Persian Android Libraries
 
 
 example:
-```
+```java
 PersianDate pdate = new PersianDate();
 PersianDateFormat pdformater1 = new PersianDateFormat('Y/m/d');
 pdformater1.format(pdate);//1396/05/20
@@ -18,7 +18,7 @@ pdformater2.format(pdate);//۱۹ تیر ۹۶
 ### 2. [persian date-time](https://github.com/mfathi91/persian-date-time)
 substitute for `DateTime` library in java. usage example:
 
-```
+```java
 // Instantiate 
 PersianDate today = PersianDate.now();
 PersianDate persianDate1 = PersianDate.of(1396, 7, 15);
@@ -44,7 +44,7 @@ dtf.format(PersianDate.now());    // => e.g. '1396/05/10'
 
 example:
 
-```
+```java
 picker = new PersianDatePickerDialog(this)
                 .setPositiveButtonString("باشه")
                 .setNegativeButton("بیخیال")
@@ -77,4 +77,20 @@ picker = new PersianDatePickerDialog(this)
                 });
 
         picker.show();
-        ```
+```
+
+
+## Tools
+### 1. [prettyPersianNumbers by Yamin8000](https://github.com/yamin8000/PrettyPersianNumbers)
+converts numbers to persian words
+example:
+```kotlin
+val word1: String = Digits().spellToFarsi(input)
+val word2: String = Digits().spellToFarsi(12) // دوازده
+//دوازده میلیارد و یک صد و بیست و سه میلیون و سی صد و دوازده هزار و یک صد و بیست و سه
+val word3: String = Digits().spellToFarsi(12_123_312_123)
+//پنج میلیون و یک صد و بیست و یک هزار و سی صد و بیست و یک
+val word4: String = Digits().spellToFarsi("5121321")
+//سه ممیز چهارده، صدم
+val decimalWord: String = Digits().spelltoFarsi(3.14)
+```
