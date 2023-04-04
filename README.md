@@ -79,6 +79,29 @@ picker = new PersianDatePickerDialog(this)
         picker.show();
 ```
 
+### 2. [PersianRangeDatePicker by Ali Sardari](https://github.com/ali-sardari/PersianRangeDatePicker)
+a beautiful date range picker for android in shamsi calendar
+
+example:
+```
+DatePickerDialog datePickerDialog = new DatePickerDialog(MainActivity.this);
+datePickerDialog.setSelectionMode(DateRangeCalendarView.SelectionMode.Range);
+//datePickerDialog.setEnableTimePicker(true);
+//datePickerDialog.setShowGregorianDate(true);
+datePickerDialog.setTextSizeTitle(10.0f);
+datePickerDialog.setTextSizeWeek(12.0f);
+datePickerDialog.setTextSizeDate(14.0f);
+datePickerDialog.setCanceledOnTouchOutside(true);
+datePickerDialog.setOnRangeDateSelectedListener(new DatePickerDialog.OnRangeDateSelectedListener() {
+        @Override
+        public void onRangeDateSelected(PersianCalendar startDate, PersianCalendar endDate) {
+            txtStartDate.setText(startDate.getPersianShortDate());
+            txtEndDate.setText(endDate.getPersianShortDate());
+        }
+});
+
+datePickerDialog.showDialog();
+```
 
 ## Tools
 ### 1. [prettyPersianNumbers by Yamin8000](https://github.com/yamin8000/PrettyPersianNumbers)
