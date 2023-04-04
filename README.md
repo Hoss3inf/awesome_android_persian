@@ -15,7 +15,7 @@ PersianDateFormat pdformater2 = new PersianDateFormat('y F j');
 pdformater2.format(pdate);//۱۹ تیر ۹۶
 ```
 
-### 2. [persian date-time](https://github.com/mfathi91/persian-date-time)
+### 2. [persian date-time by Mohammad Fathi](https://github.com/mfathi91/persian-date-time)
 substitute for `DateTime` library in java. usage example:
 
 ```java
@@ -39,7 +39,7 @@ dtf.format(PersianDate.now());    // => e.g. '1396/05/10'
 ```
 
 ## Shamsi DatePickers (solar date Pickers)
-### 1. [Persian-date-picker-dialog](https://github.com/aliab/Persian-Date-Picker-Dialog)
+### 1. [Persian-date-picker-dialog By Ali Abdollahi](https://github.com/aliab/Persian-Date-Picker-Dialog)
 [logo]: [https://raw.githubusercontent.com/aliab/Persian-Date-Picker-Dialog/master/screenshot/heroimage.jpg](https://raw.githubusercontent.com/aliab/Persian-Date-Picker-Dialog/master/screenshot/heroimage.jpg) "Logo Title Text 2"
 
 example:
@@ -104,7 +104,7 @@ datePickerDialog.showDialog();
 ```
 
 ## Tools
-### 1. [prettyPersianNumbers by Yamin8000](https://github.com/yamin8000/PrettyPersianNumbers)
+### 1. [prettyPersianNumbers by Yamin Siahmargooei](https://github.com/yamin8000/PrettyPersianNumbers)
 converts numbers to persian words
 example:
 ```kotlin
