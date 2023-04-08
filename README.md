@@ -40,8 +40,7 @@ dtf.format(PersianDate.now());    // => e.g. '1396/05/10'
 
 ## Shamsi DatePickers (solar date Pickers)
 ### 1. [Persian-date-picker-dialog By Ali Abdollahi](https://github.com/aliab/Persian-Date-Picker-Dialog)
-[logo]: [https://raw.githubusercontent.com/aliab/Persian-Date-Picker-Dialog/master/screenshot/heroimage.jpg](https://raw.githubusercontent.com/aliab/Persian-Date-Picker-Dialog/master/screenshot/heroimage.jpg) "Logo Title Text 2"
-
+![date picker by ali abdollahi](https://raw.githubusercontent.com/aliab/Persian-Date-Picker-Dialog/master/screenshot/heroimage.jpg)
 example:
 
 ```java
@@ -80,6 +79,8 @@ picker = new PersianDatePickerDialog(this)
 ```
 
 ### 2. [PersianRangeDatePicker by Ali Sardari](https://github.com/ali-sardari/PersianRangeDatePicker)
+
+![range date picker farsi](https://github.com/ali-sardari/PersianRangeDatePicker/blob/master/images/range_date_picker2.jpg)
 a beautiful date range picker for android in shamsi calendar
 
 example:
