@@ -118,3 +118,13 @@ val word4: String = Digits().spellToFarsi("5121321")
 //سه ممیز چهارده، صدم
 val decimalWord: String = Digits().spelltoFarsi(3.14)
 ```
+
+### 2. [Random persian name generator by armanyazdi](https://github.com/armanyazdi/persian-names-java)
+
+example: 
+
+```java
+System.out.println(PersianNames.fullNameFarsi("m")); // اشکان محمدرضائیان
+System.out.println(PersianNames.fullNameFarsi("f")); // مهسا امینی
+System.out.println(PersianNames.fullNameFarsi("r")); // بیتا خسروی راد
+```
