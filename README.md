@@ -104,6 +104,51 @@ datePickerDialog.setOnRangeDateSelectedListener(new DatePickerDialog.OnRangeDate
 datePickerDialog.showDialog();
 ```
 
+### 3. [persian date picker by farshad Asgharzadeh](https://github.com/Far5had70/PersianDateRangePicker)
+![persian date picker](https://raw.githubusercontent.com/Far5had70/PersianDateRangePicker/master/capture.gif)
+
+usage example:
+
+```java
+        Typeface face = Typeface.createFromAsset(getAssets(), "bsans.ttf");
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        PersianDateRangePicker persianDateRangePicker = new PersianDateRangePicker()
+                .setInitTillDate(InitDate.inputPersianDate(1, 3, 1397))
+                .setInitFromDate(InitDate.inputPersianDate(1, 1, 1397))
+                .setBackgroundColor(getResources().getColor(R.color.green))
+                .setButtonTextColor(getResources().getColor(R.color.white))
+                .setTabTextColor(getResources().getColor(R.color.white))
+                .setTabSelectedTextColor(getResources().getColor(R.color.white))
+                .setTabIndicatorColor(getResources().getColor(R.color.white))
+                .setWheelTextColor(getResources().getColor(R.color.white_smoke))
+                .setWheelTextColorSelected(getResources().getColor(R.color.white))
+                .setWheelTextSize(20)
+                .setCornerRadius(40)
+                .setTypeface(face)
+                .setDoneText("تائید")
+                .setCanselText("انصراف")
+                .setDoneDrawable(getResources().getDrawable(R.drawable.ic_tick))
+                .setCanselDeawable(getResources().getDrawable(R.drawable.ic_mult))
+                .setCurrentItem(SetCurrentItem.From)
+                .setListener(new PersianDateRangePicker.RangeDate() {
+                    @Override
+                    public void From(int day, int month, int year) {
+                        Toast.makeText(MainActivity.this, ""+day+"  "+month+"  "+year, Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void TillDate(int day, int month, int year) {
+                        Toast.makeText(MainActivity.this, ""+day+"  "+month+"  "+year, Toast.LENGTH_SHORT).show();
+
+                    }
+
+                    @Override
+                    public void cansel() {
+
+                    }
+                });
+        persianDateRangePicker.show(fragmentManager, "PersianDateRangePicker");
+```
 ## Tools
 ### 1. [prettyPersianNumbers by Yamin Siahmargooei](https://github.com/yamin8000/PrettyPersianNumbers)
 converts numbers to persian words
