@@ -173,3 +173,10 @@ System.out.println(PersianNames.fullNameFarsi("m")); // اشکان محمدرض�
 System.out.println(PersianNames.fullNameFarsi("f")); // مهسا امینی
 System.out.println(PersianNames.fullNameFarsi("r")); // بیتا خسروی راد
 ```
+
+### 3. [Persian Number To Word by mortezaSun](https://github.com/mortezasun/PersianNumberToWordAndroid)
+too simple to be true Helper methods to convert number to alphabetic presentations
+
+just copy [this file](https://github.com/mortezasun/PersianNumberToWordAndroid/blob/master/PersianNumberToWord.kt) to your project and you are good to go!
+
+
