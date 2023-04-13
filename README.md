@@ -1,4 +1,4 @@
-# awesome_android_persian
+# List of Android Persian (Farsi) Libraries
 A collection of Persian Android Libraries
 
 ## Shamsi Calenadars (solar calendars)
